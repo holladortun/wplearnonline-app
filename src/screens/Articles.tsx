@@ -1,11 +1,11 @@
 import { View, Text } from 'react-native';
 
-function Quizzes() {
+function Articles() {
 	return (
 		<View>
-			<Text>Quizzes</Text>
+			<Text>Articles</Text>
 		</View>
 	);
 }
 
-export default Quizzes;
+export default Articles;
