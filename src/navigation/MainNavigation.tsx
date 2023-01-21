@@ -22,7 +22,7 @@ function MainNavigation() {
 					fontFamily: 'ManropeRegular',
 					marginTop: -10,
 				},
-				tabBarStyle: { height: 60, paddingBottom: 10 },
+				tabBarStyle: { height: 60, paddingBottom: 9 },
 			}}
 		>
 			<Tab.Screen
