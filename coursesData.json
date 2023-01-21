@@ -1,0 +1,20 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Wordpress for Beginners",
+      "author": "Wplearnonline",
+      "category": "Web Design",
+      "featuredImage": "./assets/images/wordpressimage.jpg",
+      "lessons": 8
+    },
+    {
+      "id": 2,
+      "title": "Creating e-commerce Websites with WordPress",
+      "author": "Wplearnonline",
+      "category": "Web Design",
+      "featuredImage": "./assets/images/ecommerceimage.jpg",
+      "lessons": 4
+    }
+  ]
+}

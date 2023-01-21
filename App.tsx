@@ -1,20 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { NavigationContainer } from "@react-navigation/native";
+import { Text, View, SafeAreaView } from "react-native";
+import MainNavigation from "./src/navigation/MainNavigation";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import { useFonts } from "expo-font";
+import { SWRConfig } from "swr";
 
 export default function App() {
+  const [fontsLoaded] = useFonts({
+    ManropeRegular: require("./assets/fonts/Manrope-Regular.ttf"),
+    ManropeBold: require("./assets/fonts/Manrope-Bold.ttf"),
+  });
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SWRConfig value={{ provider: () => new Map() }}>
+      <SafeAreaProvider>
+        <NavigationContainer>
+          <MainNavigation />
+        </NavigationContainer>
+      </SafeAreaProvider>
+    </SWRConfig>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
