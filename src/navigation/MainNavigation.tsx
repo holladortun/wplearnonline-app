@@ -2,10 +2,11 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { SimpleLineIcons, Feather } from '@expo/vector-icons';
 
-import Home from '../screens/Home';
 import Profile from '../screens/Profile';
 import Quizzes from '../screens/Quizzes';
 import Articles from '../screens/Articles';
+import HomeStackNavigation from './HomeStackNavigation';
+import Learning from '../screens/Learning';
 
 const Tab = createBottomTabNavigator();
 
@@ -22,12 +23,12 @@ function MainNavigation() {
 					fontFamily: 'ManropeRegular',
 					marginTop: -10,
 				},
-				tabBarStyle: { height: 60, paddingBottom: 10 },
+				tabBarStyle: { height: 60, paddingBottom: 9 },
 			}}
 		>
 			<Tab.Screen
 				name="Home"
-				component={Home}
+				component={HomeStackNavigation}
 				options={{
 					tabBarIcon: ({ focused }) =>
 						focused ? (
@@ -38,6 +39,18 @@ function MainNavigation() {
 				}}
 			/>
 
+			<Tab.Screen
+				name="Learning"
+				component={Learning}
+				options={{
+					tabBarIcon: ({ focused }) =>
+						focused ? (
+							<SimpleLineIcons name="graduation" size={20} color="#bf00b9" />
+						) : (
+							<SimpleLineIcons name="graduation" size={20} color="grey" />
+						),
+				}}
+			/>
 			<Tab.Screen
 				name="Quizzes"
 				component={Quizzes}

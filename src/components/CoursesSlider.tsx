@@ -13,6 +13,7 @@ import {
 	BottomSheetBackdrop,
 	BottomSheetBackdropProps,
 } from '@gorhom/bottom-sheet';
+import { useNavigation } from '@react-navigation/native';
 
 import useFetchCourses from '../swr/useFetchCourses';
 import { Course } from '../models/coursesModel';
@@ -22,6 +23,7 @@ const { width } = Dimensions.get('window');
 const ITEM_LENGTH = width * 0.8;
 
 function CoursesSlider() {
+	const navigation = useNavigation();
 	const { data } = useFetchCourses();
 	const [clickedCourse, setClickedCourse] = useState<Course>({});
 	const bottomSheetModalRef = useRef<BottomSheetModal>(null);
@@ -36,6 +38,13 @@ function CoursesSlider() {
 	const handlePresentModalPress = (item: Course) => {
 		bottomSheetModalRef.current?.present();
 		setClickedCourse(item);
+	};
+	const handleNavigateToDetails = (id: string | undefined): void => {
+		navigation.navigate('CourseDetails', {
+			id,
+		});
+		console.log(id);
+		bottomSheetModalRef.current?.close();
 	};
 
 	return (
@@ -52,7 +61,7 @@ function CoursesSlider() {
 								<View style={{ width: ITEM_LENGTH }} className="mr-4 ">
 									<View>
 										<Image
-											source={require('../../assets/images/wordpressimage.jpg')}
+											source={require('../../assets/images/ecommerceimage.jpg')}
 											className="object-cover w-full  h-[200px] rounded-t-md"
 										/>
 									</View>
@@ -83,13 +92,16 @@ function CoursesSlider() {
 								snapPoints={snapPoints}
 								backdropComponent={renderBackdrop}
 							>
-								<CoursePreview {...clickedCourse} />
+								<CoursePreview
+									clickedCourse={clickedCourse}
+									handleNavigateToDetails={handleNavigateToDetails}
+								/>
 							</BottomSheetModal>
 						</>
 					);
 				}}
 				horizontal
-				keyExtractor={item => item.id}
+				keyExtractor={(item) => item.id}
 				showsHorizontalScrollIndicator={false}
 			/>
 		</View>

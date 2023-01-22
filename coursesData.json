@@ -1,20 +1,31 @@
 {
-  "courses": [
-    {
-      "id": 1,
-      "title": "Wordpress for Beginners",
-      "author": "Wplearnonline",
-      "category": "Web Design",
-      "featuredImage": "./assets/images/wordpressimage.jpg",
-      "lessons": 8
-    },
-    {
-      "id": 2,
-      "title": "Creating e-commerce Websites with WordPress",
-      "author": "Wplearnonline",
-      "category": "Web Design",
-      "featuredImage": "./assets/images/ecommerceimage.jpg",
-      "lessons": 4
-    }
-  ]
+	"courses": [
+		{
+			"id": 1,
+			"title": "Wordpress for Beginners",
+			"author": "Wplearnonline",
+			"category": "Web Design",
+			"featuredImage": "./assets/images/wordpressimage.jpg",
+			"lessons": 8,
+			"overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid autem habent admirationis, cum prope accesseris? Sed fortuna fortis; Illa tamen simplicia, vestra versuta. Nonne igitur tibi videntur, inquit, mala? Nulla erit controversia. Pauca mutat vel plura sane; Duo Reges: constructio interrete.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid autem habent admirationis, cum prope accesseris? Sed fortuna fortis; Illa tamen simplicia, vestra versuta. Nonne igitur tibi videntur, inquit, mala? Nulla erit controversia. Pauca mutat vel plura sane; Duo Reges: constructio interrete.  ",
+			"level": "Beginner"
+		},
+		{
+			"id": 2,
+			"title": "Creating e-commerce Websites with WordPress",
+			"author": "Wplearnonline",
+			"category": "Web Design",
+			"featuredImage": "./assets/images/ecommerceimage.jpg",
+			"lessons": 4,
+			"overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid autem habent admirationis, cum prope accesseris? Sed fortuna fortis; Illa tamen simplicia, vestra versuta. Nonne igitur tibi videntur, inquit, mala? Nulla erit controversia. Pauca mutat vel plura sane; Duo Reges: constructio interrete.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid autem habent admirationis, cum prope accesseris? Sed fortuna fortis; Illa tamen simplicia, vestra versuta. Nonne igitur tibi videntur, inquit, mala? Nulla erit controversia. Pauca mutat vel plura sane; Duo Reges: constructio interrete.  ",
+			"level": "Intermediate"
+		}
+	],
+	"articles": [
+		{
+			"id": 1,
+			"title": "Best tools and resources for web designers",
+			"content": "Wordpress is a content management system, in fact the most popular content management system in the world today. it powers 34% of the websites we have on the internet. A content management system is a software that gives users ( usually called admin) the ability to manage their website content. This management typically involves operations such as creating, editing, deleting content.Wordpress as a content management system is built on php( remember php from backend development). Therefore wordpress is able to build dynamic websites like multivendor websites, ecommerce websites, real estate websites, hotel booking websites, event ticketing website etc.  Wordpress is also open-source. Open-source in tech means a characteristics of a product which enables persons who are not part of the original developers of that product, to contribute to the improvement of that product."
+		}
+	]
 }

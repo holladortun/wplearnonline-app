@@ -14,16 +14,20 @@ export default function App() {
 		ManropeRegular: require('./assets/fonts/Manrope-Regular.ttf'),
 		// eslint-disable-next-line global-require
 		ManropeBold: require('./assets/fonts/Manrope-Bold.ttf'),
+		// eslint-disable-next-line global-require
+		ManropeMedium: require('./assets/fonts/Manrope-Medium.ttf'),
+		// eslint-disable-next-line global-require
+		ManropeLight: require('./assets/fonts/Manrope-Light.ttf'),
 	});
 	return (
 		<SWRConfig value={{ provider: () => new Map() }}>
 			<GestureHandlerRootView style={{ flex: 1 }}>
 				<SafeAreaProvider>
-					<BottomSheetModalProvider>
-						<NavigationContainer>
+					<NavigationContainer>
+						<BottomSheetModalProvider>
 							<MainNavigation />
-						</NavigationContainer>
-					</BottomSheetModalProvider>
+						</BottomSheetModalProvider>
+					</NavigationContainer>
 				</SafeAreaProvider>
 			</GestureHandlerRootView>
 		</SWRConfig>

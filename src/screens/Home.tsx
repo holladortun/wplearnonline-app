@@ -13,6 +13,7 @@ import { Ionicons, EvilIcons } from '@expo/vector-icons';
 import CoursesSlider from '../components/CoursesSlider';
 import CategoriesSlider from '../components/CategoriesSlider';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function Home() {
 	return (
 		<SafeAreaView>

@@ -4,5 +4,7 @@ export interface Course {
 	author?: string;
 	category?: string;
 	featuredImage?: string;
-	Lessons?: number;
+	lessons?: number;
+	overview?: string;
+	level?: string;
 }
