@@ -61,7 +61,7 @@ function CoursesSlider() {
 								<View style={{ width: ITEM_LENGTH }} className="mr-4 ">
 									<View>
 										<Image
-											source={require('../../assets/images/ecommerceimage.jpg')}
+											source={{ uri: item.featuredImage }}
 											className="object-cover w-full  h-[200px] rounded-t-md"
 										/>
 									</View>

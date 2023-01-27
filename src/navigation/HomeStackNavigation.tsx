@@ -8,29 +8,32 @@ import Home from '../screens/Home';
 
 function HomeStackNavigation(params) {
 	useLayoutEffect(() => {
-		// (1.a) Hide the tabBar on all screens in this stack:
-		// params.navigation.setOptions({ tabBarStyle: {display: "none"} });
-
 		// OR (1.b) Hide the tabBar on the screens, which satisfy a certain condition
 		const routeName = getFocusedRouteNameFromRoute(params.route);
 		if (routeName === 'CourseDetails') {
 			// the screen, which you want to hide the tabBar on
 			params.navigation.setOptions({ tabBarStyle: { display: 'none' } });
 		} else {
-			params.navigation.setOptions({ tabBarStyle: { display: 'flex' } });
+			params.navigation.setOptions({
+				tabBarStyle: {
+					display: 'flex',
+					alignItems: 'center',
+					justifyContent: 'center',
+				},
+			});
 		}
 	}, [params.navigation, params.route]);
 	const Stack = createStackNavigator();
 	return (
 		<Stack.Navigator
-			initialRouteName="Home"
+			initialRouteName="HomeScreen"
 			screenOptions={{
 				headerShown: false,
 				animationTypeForReplace: 'pop',
 				gestureEnabled: true,
 			}}
 		>
-			<Stack.Screen name="Home" component={Home} />
+			<Stack.Screen name="Homescreen" component={Home} />
 			<Stack.Screen name="CourseDetails" component={CourseDetails} />
 		</Stack.Navigator>
 	);

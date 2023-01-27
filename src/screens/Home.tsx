@@ -12,6 +12,7 @@ import { Ionicons, EvilIcons } from '@expo/vector-icons';
 
 import CoursesSlider from '../components/CoursesSlider';
 import CategoriesSlider from '../components/CategoriesSlider';
+import ResourcesSlider from '../components/ResourcesSlider';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function Home() {
@@ -24,6 +25,7 @@ function Home() {
 							<Image
 								source={require('../../assets/userimage.jpg')}
 								className="object-contain w-12 h-12 rounded-md "
+								resizeMode="contain"
 							/>
 						</View>
 						<View className="flex justify-center">
@@ -60,14 +62,18 @@ function Home() {
 					className="relative mt-8"
 					showsVerticalScrollIndicator={false}
 				>
-					<Text className="font-[ManropeRegular] text-[18px] mb-4 tracking-widest text-[#BF00B9]">
-						Featured Courses
-					</Text>
-					<CoursesSlider />
-					<Text className="font-[ManropeRegular] text-[18px] mb-4 tracking-widest mt-4 text-[#BF00B9]">
+					<Text className="font-[ManropeRegular] text-[18px] mb-4 tracking-widest  text-[#BF00B9]">
 						Categories
 					</Text>
 					<CategoriesSlider />
+					<Text className="font-[ManropeRegular] text-[18px] my-6 tracking-widest text-[#BF00B9]">
+						Featured Courses
+					</Text>
+					<CoursesSlider />
+					<Text className="font-[ManropeRegular] text-[18px] my-6 tracking-widest text-[#BF00B9]">
+						Resources
+					</Text>
+					<ResourcesSlider />
 				</ScrollView>
 			</View>
 		</SafeAreaView>

@@ -7,6 +7,7 @@ import Quizzes from '../screens/Quizzes';
 import Articles from '../screens/Articles';
 import HomeStackNavigation from './HomeStackNavigation';
 import Learning from '../screens/Learning';
+import Home from '../screens/Home';
 
 const Tab = createBottomTabNavigator();
 
@@ -23,7 +24,6 @@ function MainNavigation() {
 					fontFamily: 'ManropeRegular',
 					marginTop: -10,
 				},
-				tabBarStyle: { height: 60, paddingBottom: 9 },
 			}}
 		>
 			<Tab.Screen
@@ -36,6 +36,7 @@ function MainNavigation() {
 						) : (
 							<SimpleLineIcons name="home" size={20} color="gray" />
 						),
+					tabBarStyle: { height: 60, paddingBottom: 10 },
 				}}
 			/>
 
@@ -49,9 +50,10 @@ function MainNavigation() {
 						) : (
 							<SimpleLineIcons name="graduation" size={20} color="grey" />
 						),
+					tabBarStyle: { height: 60, paddingBottom: 10 },
 				}}
 			/>
-			<Tab.Screen
+			{/* <Tab.Screen
 				name="Quizzes"
 				component={Quizzes}
 				options={{
@@ -62,7 +64,7 @@ function MainNavigation() {
 							<SimpleLineIcons name="question" size={20} color="grey" />
 						),
 				}}
-			/>
+			/> */}
 			<Tab.Screen
 				name="Articles"
 				component={Articles}
@@ -73,6 +75,7 @@ function MainNavigation() {
 						) : (
 							<Feather name="book" size={20} color="gray" />
 						),
+					tabBarStyle: { height: 60, paddingBottom: 10 },
 				}}
 			/>
 			<Tab.Screen
@@ -85,6 +88,7 @@ function MainNavigation() {
 						) : (
 							<SimpleLineIcons name="user" size={20} color="gray" />
 						),
+					tabBarStyle: { height: 60, paddingBottom: 10 },
 				}}
 			/>
 		</Tab.Navigator>

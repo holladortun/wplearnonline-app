@@ -5,9 +5,9 @@
 			"title": "Wordpress for Beginners",
 			"author": "Wplearnonline",
 			"category": "Web Design",
-			"featuredImage": "./assets/images/wordpressimage.jpg",
+			"featuredImage": "https://res.cloudinary.com/dmd47saqa/image/upload/v1674593382/wplearnonline/Resizer.in_-62064d3611981_bg6fep.jpg",
 			"lessons": 8,
-			"overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid autem habent admirationis, cum prope accesseris? Sed fortuna fortis; Illa tamen simplicia, vestra versuta. Nonne igitur tibi videntur, inquit, mala? Nulla erit controversia. Pauca mutat vel plura sane; Duo Reges: constructio interrete.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid autem habent admirationis, cum prope accesseris? Sed fortuna fortis; Illa tamen simplicia, vestra versuta. Nonne igitur tibi videntur, inquit, mala? Nulla erit controversia. Pauca mutat vel plura sane; Duo Reges: constructio interrete.  ",
+			"overview": "The aim of this course is to teach wordpress design from scratch. By the end of this course you will understand the way wordpress works and how to use it to create stunning & professional websites. ",
 			"level": "Beginner"
 		},
 		{
@@ -15,7 +15,7 @@
 			"title": "Creating e-commerce Websites with WordPress",
 			"author": "Wplearnonline",
 			"category": "Web Design",
-			"featuredImage": "./assets/images/ecommerceimage.jpg",
+			"featuredImage": "https://res.cloudinary.com/dmd47saqa/image/upload/v1674593476/wplearnonline/pexels-katerina-holmes-5905743_d4andj.jpg",
 			"lessons": 4,
 			"overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid autem habent admirationis, cum prope accesseris? Sed fortuna fortis; Illa tamen simplicia, vestra versuta. Nonne igitur tibi videntur, inquit, mala? Nulla erit controversia. Pauca mutat vel plura sane; Duo Reges: constructio interrete.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid autem habent admirationis, cum prope accesseris? Sed fortuna fortis; Illa tamen simplicia, vestra versuta. Nonne igitur tibi videntur, inquit, mala? Nulla erit controversia. Pauca mutat vel plura sane; Duo Reges: constructio interrete.  ",
 			"level": "Intermediate"
@@ -25,7 +25,20 @@
 		{
 			"id": 1,
 			"title": "Best tools and resources for web designers",
-			"content": "Wordpress is a content management system, in fact the most popular content management system in the world today. it powers 34% of the websites we have on the internet. A content management system is a software that gives users ( usually called admin) the ability to manage their website content. This management typically involves operations such as creating, editing, deleting content.Wordpress as a content management system is built on php( remember php from backend development). Therefore wordpress is able to build dynamic websites like multivendor websites, ecommerce websites, real estate websites, hotel booking websites, event ticketing website etc.  Wordpress is also open-source. Open-source in tech means a characteristics of a product which enables persons who are not part of the original developers of that product, to contribute to the improvement of that product."
-		}
+			"content": "Wordpress is a content management system, in fact the most popular content management system in the world today. it powers 34% of the websites we have on the internet. A content management system is a software that gives users ( usually called admin) the ability to manage their website content. This management typically involves operations such as creating, editing, deleting content.Wordpress as a content management system is built on php( remember php from backend development). Therefore wordpress is able to build dynamic websites like multivendor websites, ecommerce websites, real estate websites, hotel booking websites, event ticketing website etc.  Wordpress is also open-source. Open-source in tech means a characteristics of a product which enables persons who are not part of the original developers of that product, to contribute to the improvement of that product.",
+			"Image": "https://res.cloudinary.com/dmd47saqa/image/upload/v1674593492/wplearnonline/pexels-lisa-fotios-1957478_1_pdvuc0.jpg"
+		},
+		{
+			"id": 2,
+			"title": "Best tools and resources for web designers",
+			"content": "Wordpress is a content management system, in fact the most popular content management system in the world today. it powers 34% of the websites we have on the internet. A content management system is a software that gives users ( usually called admin) the ability to manage their website content. This management typically involves operations such as creating, editing, deleting content.Wordpress as a content management system is built on php( remember php from backend development). Therefore wordpress is able to build dynamic websites like multivendor websites, ecommerce websites, real estate websites, hotel booking websites, event ticketing website etc.  Wordpress is also open-source. Open-source in tech means a characteristics of a product which enables persons who are not part of the original developers of that product, to contribute to the improvement of that product.",
+			"Image": "https://res.cloudinary.com/dmd47saqa/image/upload/v1674596392/wplearnonline/tinywow_upscale_3400110_rkn9w9.jpg"
+		},
+			{
+				"id": 3,
+				"title": "Best tools and resources for web designers",
+				"content": "Wordpress is a content management system, in fact the most popular content management system in the world today. it powers 34% of the websites we have on the internet. A content management system is a software that gives users ( usually called admin) the ability to manage their website content. This management typically involves operations such as creating, editing, deleting content.Wordpress as a content management system is built on php( remember php from backend development). Therefore wordpress is able to build dynamic websites like multivendor websites, ecommerce websites, real estate websites, hotel booking websites, event ticketing website etc.  Wordpress is also open-source. Open-source in tech means a characteristics of a product which enables persons who are not part of the original developers of that product, to contribute to the improvement of that product.",
+				"Image": "https://res.cloudinary.com/dmd47saqa/image/upload/v1674596401/wplearnonline/Downloader.la-62a5b929c3b85-e1660399664494_ih2xzg.jpg"
+			}
 	]
 }

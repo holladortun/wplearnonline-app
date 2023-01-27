@@ -20,7 +20,7 @@ function CoursePreview({
 				<View className="flex flex-row gap-4 w-[70%] items-center">
 					<View>
 						<Image
-							source={require('../../assets/images/ecommerceimage.jpg')}
+							source={{ uri: clickedCourse.featuredImage }}
 							className="w-[70px] h-[70px] rounded-md object-contain"
 						/>
 					</View>
