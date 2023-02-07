@@ -1,8 +1,9 @@
 /* eslint-disable global-require */
 import { View, Text, Image } from 'react-native';
-import { Feather } from '@expo/vector-icons';
+import { Feather, Ionicons } from '@expo/vector-icons';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-
+import { useState } from 'react';
+import useStorage from '../mmkv/useStorage';
 import { Course } from '../models/coursesModel';
 
 interface CoursePreviewProps {
@@ -14,6 +15,8 @@ function CoursePreview({
 	handleNavigateToDetails,
 	clickedCourse,
 }: CoursePreviewProps) {
+	const [isBookmarked, setIsBookmarked] = useState(false);
+
 	return (
 		<View className="px-5 py-4">
 			<View className="flex flex-row justify-between">
@@ -31,7 +34,25 @@ function CoursePreview({
 					</View>
 				</View>
 				<View className="w-[30%] flex flex-row justify-end">
-					<Feather name="bookmark" size={24} color="black" />
+					{isBookmarked ? (
+						<Ionicons
+							name="bookmark"
+							size={24}
+							color="#BF00B9"
+							onPress={() => {
+								setIsBookmarked(false);
+							}}
+						/>
+					) : (
+						<Feather
+							name="bookmark"
+							size={24}
+							color="black"
+							onPress={() => {
+								setIsBookmarked(true);
+							}}
+						/>
+					)}
 				</View>
 			</View>
 			<View className="mt-6">

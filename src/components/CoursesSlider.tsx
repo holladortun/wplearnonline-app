@@ -25,6 +25,7 @@ const ITEM_LENGTH = width * 0.8;
 function CoursesSlider() {
 	const navigation = useNavigation();
 	const { data } = useFetchCourses();
+	console.log(data);
 	const [clickedCourse, setClickedCourse] = useState<Course>({});
 	const bottomSheetModalRef = useRef<BottomSheetModal>(null);
 

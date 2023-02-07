@@ -62,11 +62,11 @@ function Home() {
 					className="relative mt-8"
 					showsVerticalScrollIndicator={false}
 				>
-					<Text className="font-[ManropeRegular] text-[18px] mb-4 tracking-widest  text-[#BF00B9]">
+					<Text className="font-[ManropeBold] text-[18px] mb-4 tracking-widest  text-[#BF00B9]">
 						Categories
 					</Text>
 					<CategoriesSlider />
-					<Text className="font-[ManropeRegular] text-[18px] my-6 tracking-widest text-[#BF00B9]">
+					<Text className="font-[ManropeBold] text-[18px] my-6 tracking-widest text-[#BF00B9]">
 						Featured Courses
 					</Text>
 					<CoursesSlider />

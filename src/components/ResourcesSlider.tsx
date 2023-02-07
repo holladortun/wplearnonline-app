@@ -6,7 +6,7 @@ import ResourcesCard from './ResourcesCard';
 
 function ResourcesSlider() {
 	const { data } = useFetchArticles();
-
+	console.log(data);
 	return (
 		<View>
 			<FlatList

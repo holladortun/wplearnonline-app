@@ -104,7 +104,6 @@ function Learning() {
 	const [routes] = useState([
 		{ key: 'first', title: 'Ongoing' },
 		{ key: 'second', title: 'Bookmarks' },
-		//{ key: 'third', title: 'Completed' },
 	]);
 	return (
 		<SafeAreaView>

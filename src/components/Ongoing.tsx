@@ -1,11 +1,17 @@
-import { View, Text } from 'react-native';
+import { ScrollView, Text } from 'react-native';
 import CourseCard from './CourseCard';
 
 function Ongoing() {
 	return (
-		<View className="px-5">
+		<ScrollView className="px-5" showsVerticalScrollIndicator={false}>
 			<CourseCard />
-		</View>
+			<CourseCard />
+			<CourseCard />
+			<CourseCard />
+			<CourseCard />
+			<CourseCard />
+			<CourseCard />
+		</ScrollView>
 	);
 }
 
